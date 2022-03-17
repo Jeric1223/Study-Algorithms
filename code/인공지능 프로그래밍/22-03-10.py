@@ -79,9 +79,5 @@ x= np.array([1,2,3], dtype='f8')
 print(x.dtype)
 print(x[0] + x[1])
 
-#다차원 배열
-(2,3,4)
-c = np.array([[1,2],[3,4],[5,6]])
-d = np.array([[1,2,3],[4,5,6]])
-print(c,d)
-print(c.shape, d.shape)\ASDasd
+
+
