@@ -43,10 +43,8 @@ def UpperBound():
     n = int(input('데이터의 값을 입력해 주세요. : '))
     input_list = list(map(int,input().split()))
     searchValue = int(input())
-
     L = 0
     R = n-1
-
     while(L < R):
         M = (L+R)//2
 

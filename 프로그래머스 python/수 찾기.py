@@ -2,7 +2,6 @@
 def BinarySearchBaek(input_list,searchValue):
     L = 0
     R = len(input_list)-1
-
     while(L <= R):
         M = (L+R)//2
         if input_list[M] < searchValue:
@@ -21,7 +20,6 @@ def Baekjun():
     A_list.sort()
     n_t = int(input())
     B_list = list(map(int, input().split()))
-
     for i in B_list:
         BinarySearchBaek(A_list,i)
 Baekjun()
