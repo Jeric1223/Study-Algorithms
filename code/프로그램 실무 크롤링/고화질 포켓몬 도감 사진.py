@@ -25,17 +25,17 @@ if response.status_code == 200:
             print(poketmonName[index].text)
 
         print(poketmonName[index].text[0:-4])
-        # if poketmonName[index].text[-1:-5] == "(2개)":
-        #     name_list.append(poketmonName[index].text[0:-4])
-        # name_list.append(poketmonName[index].text)
+        if poketmonName[index].text[-1:-5] == "(2개)":
+            name_list.append(poketmonName[index].text[0:-4])
+        name_list.append(poketmonName[index].text)
 
     print(poketmonName[1].text)
 
     for item in map(lambda x: x['src'], imageDiv[:-1]):
         start = time.time()
         print(item)
-        # os.system(f"curl {item} > {item.split('/')[-1]}")
+        os.system(f"curl {item} > {item.split('/')[-1]}")
         print(time.time() - start)
-        # img = Image.open(item.split('/')[-1])
+        img = Image.open(item.split('/')[-1])
 else:
     print(response.status_code)

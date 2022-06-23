@@ -17,6 +17,7 @@ if response.status_code == 200:
 
     for index,item in enumerate(check_list):
         rating_arr.append(item)
+        #같은 포켓몬인데 자세가 다른 씰이 있기 떄문에 그에따른 등급을 추가하는 코드입니다.
         if index == 0 or index == 4 or index == 8 or index == 136 or index == 147 or index == 157:
             rating_arr.append(item)
 
