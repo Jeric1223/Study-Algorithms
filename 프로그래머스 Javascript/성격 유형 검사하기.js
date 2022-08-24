@@ -16,13 +16,10 @@ function solution(survey, choices) {
 
   surveyScore.forEach((_item, i, arr) => {
     if (i % 2 == 0) {
-      if (arr[i] > arr[i + 1]) {
+      if (arr[i] >= arr[i + 1]) {
         answer += surveyOrder[i];
       } else if (arr[i] < arr[i + 1]) {
         answer += surveyOrder[i + 1];
-      } else {
-        let concatstring = surveyOrder[i] + surveyOrder[i + 1];
-        answer += surveyOrder[i];
       }
     }
   });
