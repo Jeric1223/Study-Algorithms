@@ -18,7 +18,7 @@ function solution(survey, choices) {
     if (i % 2 == 0) {
       if (arr[i] >= arr[i + 1]) {
         answer += surveyOrder[i];
-      } else if (arr[i] < arr[i + 1]) {
+      } else {
         answer += surveyOrder[i + 1];
       }
     }
